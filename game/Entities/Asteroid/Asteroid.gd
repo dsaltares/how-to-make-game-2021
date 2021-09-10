@@ -45,7 +45,7 @@ export var min_initial_speed := 100.0
 
 func _ready() -> void:
 	var initial_speed := rand_range(min_initial_speed, max_initial_speed)
-	linear_velocity = Vector2(randf(), randf()).normalized() * initial_speed
+	linear_velocity = Vector2(rand_range(-1, 1), rand_range(-1, 1)).normalized() * initial_speed
 
 func _integrate_forces(state: Physics2DDirectBodyState) -> void:
 	$WrapAround.wrap(state, $Sprite)
@@ -77,5 +77,4 @@ func _on_Asteroid_body_entered(body: Node) -> void:
 	if body.has_method("hit"):
 		body.hit()
 		explode()
-		EventBus.emit_signal("asteroid_exploded")
 		

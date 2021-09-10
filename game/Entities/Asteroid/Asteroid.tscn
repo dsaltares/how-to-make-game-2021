@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Entities/Asteroid/Textures/meteorBrown_big1.png" type="Texture" id=1]
+[ext_resource path="res://Entities/Asteroid/Textures/meteorGrey_big1.png" type="Texture" id=1]
 [ext_resource path="res://Entities/Asteroid/Asteroid.gd" type="Script" id=2]
 [ext_resource path="res://Entities/WrapAround.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Entities/Asteroid/CollisionShapeBig.tres" type="Shape2D" id=4]
@@ -19,7 +19,7 @@ gravity_scale = 0.0
 custom_integrator = true
 contacts_reported = 1
 contact_monitor = true
-linear_velocity = Vector2( 148.222, 155.796 )
+linear_velocity = Vector2( 277.051, 72.4512 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
